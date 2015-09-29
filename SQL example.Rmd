@@ -1,0 +1,116 @@
+---
+title: "Using R To Make Repetative SQL Queries A Snap"
+author: "Sean Warlick"
+date: "Thursday, July 30, 2015"
+output: 
+  html_document:
+    highlight: haddock
+    theme: journal
+---
+## Introduction
+Recently at work I was presented with and interesting challenge.  A customer asked for data on more than 400 airline markets with several airports in each market.  At first glance there were two solutions; 1) run a query for each airport or 2) pull all of the data at once and then do a lot of filtering.  
+
+Neither solution is ideal.  Both would have been time consuming and neither would have been easily reproduce or put into production.  After thinking a little more on the possible solutions I realized R could provide a more efficent solution.  By nesting the SQL inside of a R loop I could create a dynamic query that updates the market information with each iteration.  
+  
+
+I know I am not the only data analyst in the world who has needed to preform repetative queries, so I wanted to make sure that I share this technique and provide an example that others can work with.  
+
+## Example  
+
+### The Data  
+**DISCLAIMER:** In case anyone from work reads this, I am not using actual ticketing data or the actual data sent by our customer.  I randomly generated the data used here specifcally this example.  
+
+* First lets take a look at the data we will be working with.  We'll start by examining the data similar what that our customer sent us on the routes that they were looking for information on.    (Actually this isn't the way the real data looked when they originally sent it to me, it was hodgepodge of city codes and airport codes, and required quite a bit of munging to get it to this point.)  The first column repersents the destination market and the next six are airports in that market.  We then have then have the origin location and any airports associated with the origin.
+
+```{r option_set, echo = FALSE, eval = TRUE}
+	options(width = 95)
+```
+
+```{r RouteData, results = "markup", comment = "##" }
+routes<-read.csv("routes.csv", header = TRUE, sep = ',')
+routes[20:30, 1:10]
+```  
+
+* Next we have the airline ticket data.  We have a transaction ID, an airline, our origin and destination airports and the cost of the ticket.
+
+```{r, TicketData}
+ticket<-read.csv("tickets.csv", header = TRUE, sep = ",")
+head(ticket)
+```
+
+
+### The SQL Code  
+* For this example we are simply interested in counting the number of tickets on each market and the average cost of those tickets.  The basic structure of the SQL is really very simple.
+
+```
+	Select
+		'Market',
+		Count(id) As Passenger_Count,
+		Avg(doc_amt)
+
+	From tickets
+
+	Where
+		origin_arpt_cd In (orig_cd, orig_cd2, ..., orig_cd13)
+		And dest_arpt_cd In (dest, dest_cd, dest_cd2, ..., dest_cd5)
+
+	Group By
+		1
+```  
+
+* We need to make a couple of modifications to this basic SQL to get it ready to run in R.  For this example, since we are not connecting to a RDBMS, we will use the **sqldf** package.  The package lets you execute SQL statments on a data frame. The `sqldf()` function requires that you past the query as one long character string.
+
+```{r, eval = FALSE}
+library(sqldf)
+
+sqldf(paste(
+	#Start of Query
+	"Select ",
+		"Market, ",
+		"Count(id) As Passenger_Count, ",
+		"Avg(doc_amt) ",
+
+	"From tickets ", 
+
+	"Where ",
+		"origin_arpt_cd In () ", # List of Airports
+		"And dest_arpt_cd In ()", # list of Airports
+
+	"Group By ",
+		"1 ",
+	# End of Query
+	sep = "")
+)
+```
+
+* Next we need to is get SQL ready to update the query for Market and make sure we are filtering on the coresponding list of origin and destination airports.  To help us with his task we will make heavy use of the `paste()` function to concatinate the values pulled from the route data and the punctuation needed to satisfy the SQL syntax.  We will also use an index variable to specify the market we are on.
+
+```{r, eval = TRUE}
+i<-5
+paste(routes$Destination[i], "_", routes$POS[i], sep = "") # Gives us a market name to keep track of the data
+
+paste(routes$orig_cd[i], ",", routes$orig_cd2[i], ",", routes$orig_cd3[i], ",", routes$orig_cd4[i], ",", routes$orig_cd5[i], ",", routes$orig_cd6[i], ",", routes$orig_cd7[i], ",", routes$orig_cd8[i], ",", routes$orig_cd9[i], ",", routes$orig_cd10[i], ",", routes$orig_cd11[i], ",", routes$orig_cd12[i], ",", routes$orig_cd13[i], ",") # We will have each airport code seperated by a comma
+```
+
+```{r}
+library(sqldf)
+
+sqldf(paste(
+	#Start of Query
+	"Select ",
+		"Market, ",
+		"Count(id) As Passenger_Count, ",
+		"Avg(doc_amt) ",
+
+	"From tickets ", 
+
+	"Where ",
+		"origin_arpt_cd In () ", # List of Airports
+		"And dest_arpt_cd In ()", # list of Airports
+
+	"Group By ",
+		"1 ",
+	# End of Query
+	sep = "")
+)
+```
