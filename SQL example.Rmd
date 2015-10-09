@@ -20,7 +20,7 @@ I know I am not the only data analyst in the world who has needed to preform rep
 ### The Data  
 **DISCLAIMER:** In case anyone from work reads this, I am not using actual ticketing data or the actual data sent by our customer.  I randomly generated the data used here specifcally this example.  
 
-* First lets take a look at the data we will be working with.  We'll start by examining the data similar to what our customer sent us on the routes that they were looking for information on.    (Actually this isn't the way the real data looked when they originally sent it to me, it was hodgepodge of city codes and airport codes, and required quite a bit of munging to get it to this point.)  The first column repersents the destination market and the next six are airports in that market.  We then have then have the origin location and any airports associated with the origin.  Notice that the banks observations are denoted by ''.  This makes it easier to update the SQL and account for the fact that each row has a different number of airports .
+* First lets take a look at the data we will be working with.  We'll start by examining the data similar to what our customer sent us on the routes that they were looking for information on.    (Actually this isn't the way the real data looked when they originally sent it to me, it was hodgepodge of city codes and airport codes, and required quite a bit of munging to get it to this point.)  The first column repersents the destination market and the next six are airports in that market.  We then have then have the origin location and any airports associated with the origin.
 
 ```{r option_set, echo = FALSE, eval = TRUE}
 	options(width = 95)
@@ -34,8 +34,8 @@ routes[20:30, 1:10]
 * Next we have the airline ticket data.  We have a transaction ID, an airline, our origin and destination airports and the cost of the ticket.
 
 ```{r, TicketData}
-ticket<-read.csv("tickets.csv", header = TRUE, sep = ",")
-head(ticket)
+tickets<-read.csv("tickets.csv", header = TRUE, sep = ",")
+head(tickets)
 ```
 
 
@@ -84,40 +84,53 @@ for(i in 1:nrow(routes)){
 }
 ```
 
-* Next we need to is get SQL ready to update the query for _Market_ and `Where` statements.  To help us with his task we will make heavy use of the `paste()` function to concatinate the values pulled from the route data and the punctuation needed to satisfy the SQL syntax.  We will also use an index variable to call the correct row.  
+* Next we need to is get SQL ready to update the query for _Market_ and `Where` statements.  To help us with his task we will make heavy use of the `paste()` function to concatinate needed text with the values pulled from the route data and the punctuation needed to satisfy the SQL syntax.  We will also use an index variable to call the correct row.  
 
-```{r, eval = TRUE}
+```{r, eval = TRUE, tidy = TRUE}
 i<-5
 
 # Update Market
 paste(routes$Destination[i], "_", routes$POS[i], sep = "") # Gives us a market name to keep track of the data
 
 # Update First Part of Where Statement
-paste("origin_arpt_cd In (", routes$orig_cd[i], ",", routes$orig_cd2[i], ",", routes$orig_cd3[i], ",", routes$orig_cd4[i], ", ", routes$orig_cd5[i], ",", routes$orig_cd6[i], ",", routes$orig_cd7[i], ",", routes$orig_cd8[i], ",", routes$orig_cd9[i], ",", routes$orig_cd10[i], ",", routes$orig_cd11[i], ",", routes$orig_cd12[i], ",", routes$orig_cd13[i], ")", sep = "") # We will have each airport code seperated by a comma
+paste("orig_arpt_cd In ('", routes$orig_cd[i], "', '", routes$orig_cd2[i], "', '", routes$orig_cd3[i], "', '", routes$orig_cd4[i], "', '", routes$orig_cd5[i], "', '", routes$orig_cd6[i], "', '", routes$orig_cd7[i], "', '", routes$orig_cd8[i], "', '", routes$orig_cd9[i], "', '", routes$orig_cd10[i], "', '", routes$orig_cd11[i], "', '", routes$orig_cd12[i], "', '", routes$orig_cd13[i], "' )", sep = "") # We will have each airport code seperated by a comma
 
 # Update Second Part of Where Statement
-paste("And dest_arpt_cd In (", routes$dest1[i], ",", routes$dest_cd[i], ",", routes$dest_cd2[i], ",", routes$dest_cd3[i], ",", routes$dest_cd4[i], ",", routes$dest_cd5[i], ")", sep = "") # Again we need a comma to seperate each airport in the In list. 
+paste("And dest_arpt_cd In ('", routes$dest1[i], "', '", routes$dest_cd[i], "', '", routes$dest_cd2[i], "', '", routes$dest_cd3[i], "', '", routes$dest_cd4[i], "', '", routes$dest_cd5[i], "' )", sep = "") # Again we need a comma to seperate each airport in the In list. 
 ```
 
-```{r, eval = FALSE}
+```{r, eval = TRUE}
+
 library(sqldf)
 
-sqldf(paste(
-	#Start of Query
-	"Select ",
-		"Market, ",
-		"Count(id) As Passenger_Count, ",
-		"Avg(doc_amt) ",
+output<-data.frame(matrix(NA, nrow = nrow(routes), ncol= 3)) # Storage for Results
 
-	"From tickets ", 
+for(i in 1:nrow(routes)){
+	print(i) #This is really helpful for debugging 
+	temp<-sqldf(paste(
+		#Start of Query
+		"Select ",
+			paste('"', routes$Destination[i], "_", routes$POS[i], '"', "As Market, ", sep = ""), 
+			"Count(id) As Passenger_Count, ",
+			"sum(doc_amt) As Average_Cost ",
 
-	"Where ",
-		"origin_arpt_cd In () ", # List of Airports
-		"And dest_arpt_cd In ()", # list of Airports
+		"From tickets ", 
 
-	"Group By ",
-		"1 ",
-	# End of Query
-	sep = "")
-)
+		"Where ",
+			paste("orig_arpt_cd In ('", routes$orig_cd[i], "', '", routes$orig_cd2[i], "', '", routes$orig_cd3[i], "', '", routes$orig_cd4[i], "', '", routes$orig_cd5[i], "', '", routes$orig_cd6[i], "', '", routes$orig_cd7[i], "', '", routes$orig_cd8[i], "', '", routes$orig_cd9[i], "', '", routes$orig_cd10[i], "', '", routes$orig_cd11[i], "', '", routes$orig_cd12[i], "', '", routes$orig_cd13[i], "' ) ", sep = ""), 
+			paste("And dest_arpt_cd In ('", routes$dest1[i], "', '", routes$dest_cd[i], "', '", routes$dest_cd2[i], "', '", routes$dest_cd3[i], "', '", routes$dest_cd4[i], "', '", routes$dest_cd5[i], "' )", sep = ""),
+
+		#"Group By ",
+		#	"1 ",
+		# End of Query
+		sep = "")
+	)
+
+	output[i, ]<-temp
+
+}
+
+head(output)
 ```
+
+#### NEED TO CHECK ON THE GROUP BY STATEMENT
