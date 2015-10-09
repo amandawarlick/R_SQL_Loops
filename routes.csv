@@ -1,1 +1,101 @@
-Destination,dest1,dest_cd,dest_cd2,dest_cd3,dest_cd4,dest_cd5,POS,orig_cd,orig_cd2,orig_cd3,orig_cd4,orig_cd5,orig_cd6,orig_cd7,orig_cd8,orig_cd9,orig_cd10,orig_cd11,orig_cd12,orig_cd13Abu Dhabi,'AUH','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Albufeira,'FAO','','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Alicante,'ALC','','','','','',Norway,'OSL','SVG','BGO','TRD','TRF','KRS','AES','BOO','TOS','HAU','EVE','',''Alicante,'ALC','','','','','',Sweden,'STO','GOT','UME','LPI','LLA','','','','','','','',''Alicante,'ALC','','','','','',Finland,'HEL','TMP','TKU','OUL','VAA','','','','','','','',''Amsterdam,'AMS','','','','','',Canada,'YYZ','YVR','YUL','YYC','','','','','','','','',''Amsterdam,'AMS','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Amsterdam,'AMS','','','','','',UK,'LON','MAN','BHX','EDI','GLA','BRS','NCL','ABZ','EMA','LBA','LPL','SOU','INV'Amsterdam,'AMS','','','','','',Germany,'FRA','MUC','DUS','HAM','TXL','STR','CGN','HAJ','NUE','SXF','BRE','LEJ','DRS'Amsterdam,'AMS','','','','','',Italy,'MIL','ROM','BLQ','VCE','TRN','NAP','CTA','PSA','VRN','FLR','BRI','PMO',''Amsterdam,'AMS','','','','','',Spain,'MAD','BCN','BIO','VLC','AGP','ALC','SVQ','IBZ','OVD','PMI','SCQ','',''Amsterdam,'AMS','','','','','',Norway,'OSL','SVG','BGO','TRD','TRF','KRS','AES','BOO','TOS','HAU','EVE','',''Amsterdam,'AMS','','','','','',Sweden,'STO','GOT','UME','LPI','LLA','','','','','','','',''Amsterdam,'AMS','','','','','',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Antalya,'AYT','','','','','',Denmark,'CPH','BLL','AAL','AAR','','','','','','','','',''Aruba,'AUA','','','','','',US,'','','','','','','','','','','','',''Athens,'ATH','','','','','',UK,'LON','MAN','BHX','EDI','GLA','BRS','NCL','ABZ','EMA','LBA','LPL','SOU','INV'Athens,'ATH','','','','','',Germany,'FRA','MUC','DUS','HAM','TXL','STR','CGN','HAJ','NUE','SXF','BRE','LEJ','DRS'Athens,'ATH','','','','','',Italy,'MIL','ROM','BLQ','VCE','TRN','NAP','CTA','PSA','VRN','FLR','BRI','PMO',''Athens,'ATH','','','','','',Spain,'MAD','BCN','BIO','VLC','AGP','ALC','SVQ','IBZ','OVD','PMI','SCQ','',''Athens,'ATH','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Atlanta,'ATL','','','','','',US,'','','','','','','','','','','','',''Auckland,'AKL','','','','','',Kuala Lumpur,'KUL','PEN','','','','','','','','','','',''Bahamas,'NAS','FPO','GGT','','','',US,'','','','','','','','','','','','',''Bali,'DPS','','','','','',Kuala Lumpur,'KUL','PEN','','','','','','','','','','',''Bali,'DPS','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Bali,'DPS','','','','','',New Zealand,'AKL','WLG','CHC','ZQN','ROT','DUD','','','','','','',''Bali,'DPS','','','','','',Australia,'SYD','MEL','AVV','BNE','PER','ADL','HBA','CNS','HTI','MCY','CBR','OOL','DRW'Bali,'DPS','','','','','',Australia,'SYD','MEL','AVV','BNE','PER','ADL','HBA','CNS','HTI','MCY','CBR','OOL','DRW'Bali,'DPS','','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Bangkok,'BKK','DMK','','','','',South Korea,'ICN','GMP','','','','','','','','','','',''Bangkok,'BKK','DMK','','','','',Hong Kong,'HKG','','','','','','','','','','','',''Bangkok,'BKK','DMK','','','','',Kuala Lumpur,'KUL','PEN','','','','','','','','','','',''Bangkok,'BKK','DMK','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Bangkok,'BKK','DMK','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Bangkok,'BKK','DMK','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Bangkok,'BKK','DMK','','','','',Brazil,'GRU','GIG','POA','CNF','BSB','SSA','FOR','','','','','',''Bangkok,'BKK','DMK','','','','',Australia,'SYD','MEL','AVV','BNE','PER','ADL','HBA','CNS','HTI','MCY','CBR','OOL','DRW'Bangkok,'BKK','DMK','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Bangkok,'BKK','DMK','','','','',Spain,'MAD','BCN','BIO','VLC','AGP','ALC','SVQ','IBZ','OVD','PMI','SCQ','',''Barcelona,'BCN','','','','','',Canada,'YYZ','YVR','YUL','YYC','','','','','','','','',''Barcelona,'BCN','','','','','',South Korea,'ICN','GMP','','','','','','','','','','',''Barcelona,'BCN','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Barcelona,'BCN','','','','','',US,'','','','','','','','','','','','',''Barcelona,'BCN','','','','','',UK,'LON','MAN','BHX','EDI','GLA','BRS','NCL','ABZ','EMA','LBA','LPL','SOU','INV'Barcelona,'BCN','','','','','',Germany,'FRA','MUC','DUS','HAM','TXL','STR','CGN','HAJ','NUE','SXF','BRE','LEJ','DRS'Barcelona,'BCN','','','','','',Italy,'MIL','ROM','BLQ','VCE','TRN','NAP','CTA','PSA','VRN','FLR','BRI','PMO',''Barcelona,'BCN','','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Barcelona,'BCN','','','','','',Norway,'OSL','SVG','BGO','TRD','TRF','KRS','AES','BOO','TOS','HAU','EVE','',''Barcelona,'BCN','','','','','',Sweden,'STO','GOT','UME','LPI','LLA','','','','','','','',''Barcelona,'BCN','','','','','',Denmark,'CPH','BLL','AAL','AAR','','','','','','','','',''Barcelona,'BCN','','','','','',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Barcelona,'BCN','','','','','',Finland,'HEL','TMP','TKU','OUL','VAA','','','','','','','',''Bergamo,'BGY','','','','','',Finland,'HEL','TMP','TKU','OUL','VAA','','','','','','','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',UK,'LON','MAN','BHX','EDI','GLA','BRS','NCL','ABZ','EMA','LBA','LPL','SOU','INV'Berlin,'TXL','BER','GWW','QWE','THF','SXF',Italy,'MIL','ROM','BLQ','VCE','TRN','NAP','CTA','PSA','VRN','FLR','BRI','PMO',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Spain,'MAD','BCN','BIO','VLC','AGP','ALC','SVQ','IBZ','OVD','PMI','SCQ','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Norway,'OSL','SVG','BGO','TRD','TRF','KRS','AES','BOO','TOS','HAU','EVE','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Sweden,'STO','GOT','UME','LPI','LLA','','','','','','','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Denmark,'CPH','BLL','AAL','AAR','','','','','','','','',''Berlin,'TXL','BER','GWW','QWE','THF','SXF',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Boracay,'KLO','','','','','',South Korea,'ICN','GMP','','','','','','','','','','',''Boston,'BOS','','','','','',US,'','','','','','','','','','','','',''Boston,'BOS','','','','','',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Brisbane,'BNE','','','','','',New Zealand,'AKL','WLG','CHC','ZQN','ROT','DUD','','','','','','',''Brussels,'BRU','','','','','',Spain,'MAD','BCN','BIO','VLC','AGP','ALC','SVQ','IBZ','OVD','PMI','SCQ','',''Budapest,'BUD','','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Budapest,'BUD','','','','','',Finland,'HEL','TMP','TKU','OUL','VAA','','','','','','','',''Busan,'PUS','','','','','',South Korea,'ICN','GMP','','','','','','','','','','',''Calgary,'YYC','','','','','',Brazil,'GRU','GIG','POA','CNF','BSB','SSA','FOR','','','','','',''Calgary,'YYC','','','','','',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Cancun,'CUN','','','','','',Canada,'YYZ','YVR','YUL','YYC','','','','','','','','',''Cancun,'CUN','','','','','',Brazil,'GRU','GIG','POA','CNF','BSB','SSA','FOR','','','','','',''Cancun,'CUN','','','','','',US,'','','','','','','','','','','','',''Cancun,'CUN','','','','','',US,'','','','','','','','','','','','',''Catania,'CTA','','','','','',Finland,'HEL','TMP','TKU','OUL','VAA','','','','','','','',''Cayman Islands,'GCM','CYB','','','','',US,'','','','','','','','','','','','',''Cebu,'CEB','','','','','',South Korea,'ICN','GMP','','','','','','','','','','',''Chiang Mai,'CNX','','','','','',Hong Kong,'HKG','','','','','','','','','','','',''Chiang Mai,'CNX','','','','','',Thailand,'DMK','BKK','','','','','','','','','','',''Chiangrai,'CEI','','','','','',Thailand,'DMK','BKK','','','','','','','','','','',''Chicago,'ORD','MDW','','','','',Canada,'YYZ','YVR','YUL','YYC','','','','','','','','',''Chicago,'ORD','MDW','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Chicago,'ORD','MDW','','','','',Mexico,'MEX','MTY','GDL','','','','','','','','','',''Chicago,'ORD','MDW','','','','',US,'','','','','','','','','','','','',''Chicago,'ORD','MDW','','','','',Ireland,'DUB','SNN','ORK','','','','','','','','','',''Copenhagen,'CPH','','','','','',Germany,'FRA','MUC','DUS','HAM','TXL','STR','CGN','HAJ','NUE','SXF','BRE','LEJ','DRS'Copenhagen,'CPH','','','','','',Norway,'OSL','SVG','BGO','TRD','TRF','KRS','AES','BOO','TOS','HAU','EVE','',''Copenhagen,'CPH','','','','','',Sweden,'STO','GOT','UME','LPI','LLA','','','','','','','',''Curacao,'CUR','','','','','',US,'','','','','','','','','','','','',''Dominican Republic,'STX','SDQ','','','','',US,'','','','','','','','','','','','',''Dominican Republic,'SDQ','PUJ','','','','',US,'','','','','','','','','','','','',''Dubai,'DXB','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Dubai,'DXB','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Dubai,'DXB','','','','','',India,'DEL','BOM','BLR','HYD','','','','','','','','',''Dubai,'DXB','','','','','',US,'','','','','','','','','','','','',''Dubai,'DXB','','','','','',Netherlands,'AMS','EIN','RTM','','','','','','','','','',''Dublin,'DUB','','','','','',Canada,'YYZ','YVR','YUL','YYC','','','','','','','','',''Dublin,'DUB','','','','','',UK,'LON','MAN','BHX','EDI','GLA','BRS','NCL','ABZ','EMA','LBA','LPL','SOU','INV'
+Destination,dest1,dest_cd,dest_cd2,dest_cd3,dest_cd4,dest_cd5,POS,orig_cd,orig_cd2,orig_cd3,orig_cd4,orig_cd5,orig_cd6,orig_cd7,orig_cd8,orig_cd9,orig_cd10,orig_cd11,orig_cd12,orig_cd13,V22
+Abu Dhabi,AUH,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,AUH
+Albufeira,FAO,,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,FAO
+Alicante,ALC,,,,,,Norway,OSL,SVG,BGO,TRD,TRF,KRS,AES,BOO,TOS,HAU,EVE,,,ALC
+Alicante,ALC,,,,,,Sweden,STO,GOT,UME,LPI,LLA,,,,,,,,,ALC
+Alicante,ALC,,,,,,Finland,HEL,TMP,TKU,OUL,VAA,,,,,,,,,ALC
+Amsterdam,AMS,,,,,,Canada,YYZ,YVR,YUL,YYC,,,,,,,,,,AMS
+Amsterdam,AMS,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,AMS
+Amsterdam,AMS,,,,,,UK,LON,MAN,BHX,EDI,GLA,BRS,NCL,ABZ,EMA,LBA,LPL,SOU,INV,AMS
+Amsterdam,AMS,,,,,,Germany,FRA,MUC,DUS,HAM,TXL,STR,CGN,HAJ,NUE,SXF,BRE,LEJ,DRS,AMS
+Amsterdam,AMS,,,,,,Italy,MIL,ROM,BLQ,VCE,TRN,NAP,CTA,PSA,VRN,FLR,BRI,PMO,,AMS
+Amsterdam,AMS,,,,,,Spain,MAD,BCN,BIO,VLC,AGP,ALC,SVQ,IBZ,OVD,PMI,SCQ,,,AMS
+Amsterdam,AMS,,,,,,Norway,OSL,SVG,BGO,TRD,TRF,KRS,AES,BOO,TOS,HAU,EVE,,,AMS
+Amsterdam,AMS,,,,,,Sweden,STO,GOT,UME,LPI,LLA,,,,,,,,,AMS
+Amsterdam,AMS,,,,,,Ireland,DUB,SNN,ORK,,,,,,,,,,,AMS
+Antalya,AYT,,,,,,Denmark,CPH,BLL,AAL,AAR,,,,,,,,,,AYT
+Aruba,AUA,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,AUA
+Athens,ATH,,,,,,UK,LON,MAN,BHX,EDI,GLA,BRS,NCL,ABZ,EMA,LBA,LPL,SOU,INV,ATH
+Athens,ATH,,,,,,Germany,FRA,MUC,DUS,HAM,TXL,STR,CGN,HAJ,NUE,SXF,BRE,LEJ,DRS,ATH
+Athens,ATH,,,,,,Italy,MIL,ROM,BLQ,VCE,TRN,NAP,CTA,PSA,VRN,FLR,BRI,PMO,,ATH
+Athens,ATH,,,,,,Spain,MAD,BCN,BIO,VLC,AGP,ALC,SVQ,IBZ,OVD,PMI,SCQ,,,ATH
+Athens,ATH,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,ATH
+Atlanta,ATL,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,ATL
+Auckland,AKL,,,,,,Kuala Lumpur,KUL,PEN,,,,,,,,,,,,AKL
+Bahamas,NAS,FPO,GGT,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,NAS
+Bali,DPS,,,,,,Kuala Lumpur,KUL,PEN,,,,,,,,,,,,DPS
+Bali,DPS,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,DPS
+Bali,DPS,,,,,,New Zealand,AKL,WLG,CHC,ZQN,ROT,DUD,,,,,,,,DPS
+Bali,DPS,,,,,,Australia,SYD,MEL,AVV,BNE,PER,ADL,HBA,CNS,HTI,MCY,CBR,OOL,DRW,DPS
+Bali,DPS,,,,,,Australia,SYD,MEL,AVV,BNE,PER,ADL,HBA,CNS,HTI,MCY,CBR,OOL,DRW,DPS
+Bali,DPS,,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,DPS
+Bangkok,BKK,DMK,,,,,South Korea,ICN,GMP,,,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,Hong Kong,HKG,,,,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,Kuala Lumpur,KUL,PEN,,,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,Brazil,GRU,GIG,POA,CNF,BSB,SSA,FOR,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,Australia,SYD,MEL,AVV,BNE,PER,ADL,HBA,CNS,HTI,MCY,CBR,OOL,DRW,BKK
+Bangkok,BKK,DMK,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,BKK
+Bangkok,BKK,DMK,,,,,Spain,MAD,BCN,BIO,VLC,AGP,ALC,SVQ,IBZ,OVD,PMI,SCQ,,,BKK
+Barcelona,BCN,,,,,,Canada,YYZ,YVR,YUL,YYC,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,South Korea,ICN,GMP,,,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,BCN
+Barcelona,BCN,,,,,,UK,LON,MAN,BHX,EDI,GLA,BRS,NCL,ABZ,EMA,LBA,LPL,SOU,INV,BCN
+Barcelona,BCN,,,,,,Germany,FRA,MUC,DUS,HAM,TXL,STR,CGN,HAJ,NUE,SXF,BRE,LEJ,DRS,BCN
+Barcelona,BCN,,,,,,Italy,MIL,ROM,BLQ,VCE,TRN,NAP,CTA,PSA,VRN,FLR,BRI,PMO,,BCN
+Barcelona,BCN,,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,Norway,OSL,SVG,BGO,TRD,TRF,KRS,AES,BOO,TOS,HAU,EVE,,,BCN
+Barcelona,BCN,,,,,,Sweden,STO,GOT,UME,LPI,LLA,,,,,,,,,BCN
+Barcelona,BCN,,,,,,Denmark,CPH,BLL,AAL,AAR,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,Ireland,DUB,SNN,ORK,,,,,,,,,,,BCN
+Barcelona,BCN,,,,,,Finland,HEL,TMP,TKU,OUL,VAA,,,,,,,,,BCN
+Bergamo,BGY,,,,,,Finland,HEL,TMP,TKU,OUL,VAA,,,,,,,,,BGY
+Berlin,TXL,BER,GWW,QWE,THF,SXF,UK,LON,MAN,BHX,EDI,GLA,BRS,NCL,ABZ,EMA,LBA,LPL,SOU,INV,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Italy,MIL,ROM,BLQ,VCE,TRN,NAP,CTA,PSA,VRN,FLR,BRI,PMO,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Netherlands,AMS,EIN,RTM,,,,,,,,,,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Spain,MAD,BCN,BIO,VLC,AGP,ALC,SVQ,IBZ,OVD,PMI,SCQ,,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Norway,OSL,SVG,BGO,TRD,TRF,KRS,AES,BOO,TOS,HAU,EVE,,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Sweden,STO,GOT,UME,LPI,LLA,,,,,,,,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Denmark,CPH,BLL,AAL,AAR,,,,,,,,,,BER
+Berlin,TXL,BER,GWW,QWE,THF,SXF,Ireland,DUB,SNN,ORK,,,,,,,,,,,BER
+Boracay,KLO,,,,,,South Korea,ICN,GMP,,,,,,,,,,,,KLO
+Boston,BOS,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,BOS
+Boston,BOS,,,,,,Ireland,DUB,SNN,ORK,,,,,,,,,,,BOS
+Brisbane,BNE,,,,,,New Zealand,AKL,WLG,CHC,ZQN,ROT,DUD,,,,,,,,BNE
+Brussels,BRU,,,,,,Spain,MAD,BCN,BIO,VLC,AGP,ALC,SVQ,IBZ,OVD,PMI,SCQ,,,BRU
+Budapest,BUD,,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,BUD
+Budapest,BUD,,,,,,Finland,HEL,TMP,TKU,OUL,VAA,,,,,,,,,BUD
+Busan,PUS,,,,,,South Korea,ICN,GMP,,,,,,,,,,,,PUS
+Calgary,YYC,,,,,,Brazil,GRU,GIG,POA,CNF,BSB,SSA,FOR,,,,,,,YYC
+Calgary,YYC,,,,,,Ireland,DUB,SNN,ORK,,,,,,,,,,,YYC
+Cancun,CUN,,,,,,Canada,YYZ,YVR,YUL,YYC,,,,,,,,,,CUN
+Cancun,CUN,,,,,,Brazil,GRU,GIG,POA,CNF,BSB,SSA,FOR,,,,,,,CUN
+Cancun,CUN,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,CUN
+Cancun,CUN,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,CUN
+Catania,CTA,,,,,,Finland,HEL,TMP,TKU,OUL,VAA,,,,,,,,,CTA
+Cayman Islands,GCM,CYB,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,GCM
+Cebu,CEB,,,,,,South Korea,ICN,GMP,,,,,,,,,,,,CEB
+Chiang Mai,CNX,,,,,,Hong Kong,HKG,,,,,,,,,,,,,CNX
+Chiang Mai,CNX,,,,,,Thailand,DMK,BKK,,,,,,,,,,,,CNX
+Chiangrai,CEI,,,,,,Thailand,DMK,BKK,,,,,,,,,,,,CEI
+Chicago,ORD,MDW,,,,,Canada,YYZ,YVR,YUL,YYC,,,,,,,,,,CHI
+Chicago,ORD,MDW,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,CHI
+Chicago,ORD,MDW,,,,,Mexico,MEX,MTY,GDL,,,,,,,,,,,CHI
+Chicago,ORD,MDW,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,CHI
+Chicago,ORD,MDW,,,,,Ireland,DUB,SNN,ORK,,,,,,,,,,,CHI
+Copenhagen,CPH,,,,,,Germany,FRA,MUC,DUS,HAM,TXL,STR,CGN,HAJ,NUE,SXF,BRE,LEJ,DRS,CPH
+Copenhagen,CPH,,,,,,Norway,OSL,SVG,BGO,TRD,TRF,KRS,AES,BOO,TOS,HAU,EVE,,,CPH
+Copenhagen,CPH,,,,,,Sweden,STO,GOT,UME,LPI,LLA,,,,,,,,,CPH
+Curacao,CUR,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,CUR
+Dominican Republic,STX,SDQ,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,STX
+Dominican Republic,SDQ,PUJ,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,SDQ
+Dubai,DXB,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,DXB
+Dubai,DXB,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,DXB
+Dubai,DXB,,,,,,India,DEL,BOM,BLR,HYD,,,,,,,,,,DXB
+Dubai,DXB,,,,,,US,JFK,ORD,MCO,DFW,ATL,LAX,,,,,,,,DXB
+Dubai,DXB,,,,,,Netherlands,AMS,EIN,RTM,,,,,,,,,,,DXB
+Dublin,DUB,,,,,,Canada,YYZ,YVR,YUL,YYC,,,,,,,,,,DUB
+Dublin,DUB,,,,,,UK,LON,MAN,BHX,EDI,GLA,BRS,NCL,ABZ,EMA,LBA,LPL,SOU,INV,DUB
