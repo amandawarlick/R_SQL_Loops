@@ -1,5 +1,5 @@
 ---
-title: "Using R To Make Repetative SQL Queries A Snap"
+title: "Using R To Make Repetitive SQL Queries A Snap"
 author: "Sean Warlick"
 date: "Thursday, July 30, 2015"
 output: 
@@ -10,17 +10,17 @@ output:
 ## Introduction
 Recently at work I was presented with an interesting challenge.  A customer asked for data on more than 400 airline markets with several airports in each market.  At first glance there were two solutions; 1) run a query for each airport or 2) pull all of the data at once and then do a lot of filtering.  
 
-Neither solution is ideal.  Both would have been time consuming and neither would have been easily reproduce or productionalize.  After thinking a little more on the possible solutions I realized R could provide a more efficent solution.  By nesting the SQL inside of a R loop I could create a dynamic query that updates the market information with each iteration.  
+Neither solution is ideal.  Both would have been time consuming and neither would have been easy to reproduce or productionalize.  After thinking a little more on the possible solutions, I realized R could provide a more efficent option.  By nesting the SQL inside of a R loop I could create a dynamic query that updates the market information with each iteration.  
   
 
-I know I am not the only data analyst in the world who has needed to preform repetative queries, so I wanted to make sure that I share this technique and provide an example that others can work with.  
+I know I am not the only data analyst in the world who has needed to perform repetitive queries, so I wanted to make sure that I share this technique and provide an example that others can work with.  
 
 ## Example  
 
 ### The Data  
-**DISCLAIMER:** In case anyone from work reads this, I am not using actual ticketing data or the actual data sent by our customer.  I randomly generated the data used here specifcally this example.  
+**DISCLAIMER:** I am not using actual ticketing data or the actual data sent by customers.  I randomly generated the data used here specifcally for this example.  
 
-* First lets take a look at the data we will be working with.  We'll start by examining the data similar to what our customer sent us on the routes that they were looking for information on.    (Actually this isn't the way the real data looked when they originally sent it to me, it was hodgepodge of city codes and airport codes, and required quite a bit of munging to get it to this point.)  The first column repersents the destination market and the next six are airports in that market.  We then have then have the origin location and any airports associated with the origin.
+* First, lets take a look at the data we will be working with.  We'll start by examining the data similar to what our customer sent us on the routes that they were looking for information on.    (Actually, this isn't the way the real data looked when they originally sent it to me, it was a hodgepodge of city codes and airport codes, and required quite a bit of cleaning to get it to this point.)  The first column repersents the destination market and the next six are airports in that market.  We then have the origin location and any airports associated with that origin.
 
 ```{r option_set, echo = FALSE, eval = TRUE}
 	options(width = 95)
@@ -40,7 +40,7 @@ head(tickets)
 
 
 ### The SQL Code  
-* For this example we are simply interested in counting the number of tickets on each market and the average cost of those tickets.  The basic structure of the SQL we will be using is very simple.  The the three spots that we will be concerened with updating are the _Market_ variable and the two clauses in the `Where` statement.  
+* For this example, we are simply interested in counting the number of tickets on each market and the average cost of those tickets.  The basic structure of the SQL code is very simple.  The three spots that we will be concerened with updating are the _Market_ variable and the two clauses in the `Where` statement.  
 
 ```
 	Select
@@ -60,7 +60,7 @@ head(tickets)
 
 * We need to make a couple of modifications to this basic SQL to get it ready to run in R.  For this example, since we are not connecting to a RDBMS, we will use the **sqldf** package.  The package lets you execute SQL statments on a data frame. The `sqldf()` function requires that you past the query as one long character string.
 
-* To make the SQL dynamic we will start by imbeding the query in a for loop and index the loop based on the rows of the routes data provided by the customer.  
+* To make the SQL dynamic, we will start by imbedding the query in a for loop and index the loop based on the rows of the routes data provided by the customer.  
 
 ``` {r, eval = FALSE}
 for(i in 1:nrow(routes)){
@@ -84,7 +84,7 @@ for(i in 1:nrow(routes)){
 }
 ```
 
-* Next we need to is get SQL ready to update the query for _Market_ and `Where` statements.  To help us with his task we will make heavy use of the `paste()` function to concatinate needed text with the values pulled from the route data and the punctuation needed to satisfy the SQL syntax.  We will also use an index variable to call the correct row.  
+* Next we need to get SQL ready to update the query for _Market_ and `Where` statements.  To help us with his task, we will make heavy use of the `paste()` function to concatinate needed text with the values pulled from the route data and the punctuation needed to satisfy the SQL syntax.  We will also use an index variable to call the correct row.  
 
 ```{r, eval = TRUE, tidy = TRUE}
 i<-5
